@@ -85,10 +85,17 @@ h1{
     }
     
 }
-
+@media (max-width: 474px) {
+    h1 {
+        font-size: 1em;
+    }
+    
+}
 @media (max-width: 660px){
     button{
         font-size: 12px;
+        line-height: 18px;
     }
+
 
 }
