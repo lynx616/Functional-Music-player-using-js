@@ -93,8 +93,16 @@ h1{
 }
 @media (max-width: 660px){
     button{
-        font-size: 12px;
+        font-size: 10px;
         line-height: 18px;
+    }
+
+
+}
+@media (max-width: 382px){
+    button{
+        font-size: 6px;
+        
     }
 
 
