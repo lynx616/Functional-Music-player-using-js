@@ -3,24 +3,23 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-   
+   margin: 0;
+   padding: 0;
 }
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    justify-content: space-around;
-    margin:0;
     height: 100vh;
-   
-
+}
+#main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
 }
 button{
-    padding: 10px 25px;
-    font-size: 22px;
-    line-height: 40px;
-    min-width: 150px;
+    padding: 7px 7px;
+    line-height: 40px; 
+    width: 40%;
     border-radius: 12px;
     cursor: pointer;
     background: rgba(0, 0, 0, 0.4);
@@ -28,7 +27,7 @@ button{
     color: aliceblue;
     transition: .4s ease-in-out;
     outline: none;
-    font-size:40px;
+    font-size: 30px;
     font-family: 'Raleway Dots', cursive;
     
 }
@@ -44,21 +43,52 @@ button:hover{
     bottom: 0;
     z-index: -1;
 }
+#btn-group{
+    margin-top: 26%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.8s ease-in-out;
+}
+
 h1{
     color: white;
     text-align: center;
     font-family: 'Kaushan Script', cursive;
-    font-size: 80px;
+    font-size:5em;
+    width: 30%;
     border-left: 2px solid crimson;
     border-right: 2px solid crimson;
-    margin-bottom: 85%;
+    cursor:alias;
     transition: .8s ease-in-out;
     opacity: 85%;
-    height: 20vh;
+    /* height: 20vh; */
 }
-h1:hover{
-    margin-bottom: 10%;
+
+@media(min-aspect-ratio:16/9){
+    #back{
+        width: 100%;
+        height: auto;
+    }
 }
-#whole{
-    margin-bottom: 5%;
+@media(max-aspect-ratio:16/9){
+    #back{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1120px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+}
+
+@media (max-width: 660px){
+    button{
+        font-size: 12px;
+    }
+
 }
