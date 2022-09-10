@@ -85,9 +85,13 @@ h1{
     }
     
 }
-@media (max-width: 474px) {
+@media all and (max-width: 511px) and (min-width:461px) {
     h1 {
         font-size: 1em;
+    }
+    button{
+        font-size: 15px;
+        line-height: 18px;
     }
     
 }
@@ -100,10 +104,13 @@ h1{
 
 }
 @media (max-width: 382px){
+    h1 {
+        font-size: 23px;
+    }
     button{
-        font-size: 6px;
+        font-size: 8px;
         
     }
-
+   
 
 }
